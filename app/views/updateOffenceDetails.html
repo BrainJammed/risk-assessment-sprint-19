@@ -18,8 +18,12 @@ Case summary
       <link rel="apple-touch-icon" sizes="167x167" href="/govuk/assets/images/govuk-apple-touch-icon-167x167.png">
       <link rel="apple-touch-icon" sizes="152x152" href="/govuk/assets/images/govuk-apple-touch-icon-152x152.png">
       <link rel="apple-touch-icon" href="/govuk/assets/images/govuk-apple-touch-icon.png">
-      <link href="/public/stylesheets/application.css" media="all" rel="stylesheet" type="text/css" />
-<!--  -->
+    
+
+    
+  <!--[if lte IE 8]><link href="/public/stylesheets/application-ie8.css" rel="stylesheet" type="text/css" /><![endif]-->
+<!--[if gt IE 8]><!-->
+<link href="/public/stylesheets/application.css" media="all" rel="stylesheet" type="text/css" />
 <!--<![endif]-->
 
 
@@ -57,7 +61,13 @@ Case summary
             <a class="moj-header__navigation-link" href="#" aria-current="page">Mark Berridge</a>
           </li>
 
+<!--           <li class="moj-header__navigation-item">
+            <a class="moj-header__navigation-link" href="/change-court">Change court</a>
+          </li>
 
+          <li class="moj-header__navigation-item">
+            <a class="moj-header__navigation-link" href="#">Sign out</a>
+          </li> -->
         </ul>
 
       </nav>
@@ -124,268 +134,120 @@ Case summary
    <main class="govuk-main-wrapper govuk-main-wrapper--auto-spacing" id="main-content" role="main">
 
 
-     
+
+
+      <a href="psrCourt.html" class="govuk-back-link">Back</a>
+<!--             <span class="govuk-caption-xl">Individual and case details</span> -->
+            <h1 class="govuk-heading-xl">Update offence details</h1>
 
 
             
               <div class="govuk-grid-row">
-               <div class="govuk-grid-column-full">
-                <h1 class="govuk-heading-xl">List of areas</h1>
-
-                <div class="govuk-inset-text">
-                  Because this is a new assessment, you must select an area to associate with the individual.
-                </div>
+               <div class="govuk-grid-column-two-thirds">
 
                 <div class="govuk-form-group">
-                  <fieldset class="govuk-fieldset">
-                    <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+                  <fieldset class="govuk-fieldset" aria-describedby="changed-name-hint">
+                    <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
                       <h1 class="govuk-fieldset__heading">
-                        Choose an area
+                        Choose an offence
                       </h1>
                     </legend>
-                  </fieldset>
-
-                  <div class="govuk-form-group">
-<!--                     <label class="govuk-label" for="sort">
-                      Sort by
-                    </label> -->
-                    <select id="sort" name="sort">
-                      <option value="published">Hewell Grange (HMP)</option>
-                      <option value="published">Shrewsbury (HMP)</option>
-                      <option value="published">Swinfen Hall (HMP)</option>
-                      <option value="published">Stoke Heath (HMP)</option>
-                      <option value="published">Cardiff (HMP)</option>
-                      <option value="published">Parc (HMP)</option>
-                      <option value="published">Swansea (HMP)</option>
-                      <option value="published">USK (HMP)</option>
-                      <option value="published">Bedford (HMP)</option>
-                      <option value="published">Blundeston (HMP)</option>
-                      <option value="published">Chelmsford (HMP)</option>
-                      <option value="published">Highpoint (HMP)</option>
-                      <option value="published">Littlehey (HMP)</option>
-                      <option value="published">Norwich (HMP)</option>
-                      <option value="published">The Mount (HMP)</option>
-                      <option value="published">Wayland (HMP)</option>
-                      <option value="published">Hollesley Bay (HMP)</option>
-                      <option value="published">Albany (HMP)</option>
-                      <option value="published">Aylesbury (HMP)</option>
-                      <option value="published">Bullingdon (HMP)</option>
-                      <option value="published">Grendon (HMP)</option>
-                      <option value="published">Spring Hill (HMP)</option>
-                      <option value="published">Haslar (HMP)</option>
-                      <option value="published">Kingston (HMP)</option>
-                      <option value="published">Parkhurst (HMP)</option>
-                      <option value="published">Reading (HMP)</option>
-                      <option value="published">Winchester (HMP)</option>
-                      <option value="published">Pentonville (HMP)</option>
-                      <option value="published">Wandsworth (HMP)</option>
-                      <option value="published">Wormwood Scrubs (HMP)</option>
-                      <option value="published">Blantyre House (HMP)</option>
-                      <option value="published">Canterbury (HMP)</option>
-                      <option value="published">Coldingley (HMP)</option>
-                      <option value="published">Dover (HMP)</option>
-                      <option value="published">Elmley (HMP)</option>
-                      <option value="published">Ford (HMP)</option>
-                      <option value="published">High Down (HMP)</option>
-                      <option value="published">Lewes (HMP)</option>
-                      <option value="published">Maidstone (HMP)</option>
-                      <option value="published">Rochester (HMP)</option>
-                      <option value="published">Stanford Hill (HMP))</option>
-                      <option value="published">Swaleside (HMP))</option>
-                      <option value="published">Bristol (HMP)</option>
-                      <option value="published">Channings Wood (HMP)</option>
-                      <option value="published">Dorchester (HMP)</option>
-                      <option value="published">Erlestoke (HMP)</option>
-                      <option value="published">Exeter (HMP)</option>
-                      <option value="published">Gloucester (HMP)</option>
-                      <option value="published">Guys Marsh (HMP)</option>
-                      <option value="published">Leyhill (HMP))</option>
-                      <option value="published">Shepton Mallet (HMP)</option>
-                      <option value="published">The Verne (HMP)</option>
-                      <option value="published">YOI Portland (HMP)</option>
-                      <option value="published">Belmarsh (HMP)</option>
-                      <option value="published">Frankland (HMP)</option>
-                      <option value="published">Full Sutton (HMP)</option>
-                      <option value="published">Long Lartin (HMP)</option>
-                      <option value="published">Wakefield (HMP)</option>
-                      <option value="published">Whitemoor (HMP)</option>
-                      <option value="published">Woodhill (HMP)</option>
-                      <option value="published">Huntercombe (HMP)</option>
-                      <option value="published">Werrington (HMP)</option>
-                      <option value="published">Wetherby (HMP)</option>
-                      <option value="published">Askham Grange (HMP)</option>
-                      <option value="published">Brockhill (HMP)</option>
-                      <option value="published">Bullwood Hall (HMP)</option>
-                      <option value="published">Cookham Wood (HMP)</option>
-                      <option value="published">Drake Hall (HMP)</option>
-                      <option value="published">East Sutton Park (HMP</option>
-                      <option value="published">Eastwood Park (HMP)</option>
-                      <option value="published">Foston Hall (HMP)</option>
-                      <option value="published">Holloway (HMP)</option>
-                      <option value="published">Low Newton (HMP)</option>
-                      <option value="published">New Hall (HMP)</option>
-                      <option value="published">Send (HMP)</option>
-                      <option value="published">Downview (HMP)</option>
-                      <option value="published">Morton Hall (HMP)</option>
-                      <option value="published">Warren Hill (HMP)</option>
-                      <option value="published">Edmunds Hill (HMP)</option>
-                      <option value="published">Bronzefield (HMP)</option>
-                      <option value="published">Peterborough (HMP)</option>
-                      <option value="published">Kennet (HMP)</option>
-                      <option value="published">Bure (HMP)</option>
-                      <option value="published">Peterborough Female (HMP)</option>
-                      <option value="published">Bedfordshire</option>
-                      <option value="published">Cambridgeshire</option>
-                      <option value="published">Cheshire</option>
-                      <option value="published">Cumbria</option>
-                      <option value="published">Dyfed-Powys</option>
-                      <option value="published">Durham</option>
-                      <option value="published">Dorset</option>
-                      <option value="published">Essex</option>
-                      <option value="published">Gloucestershire</option>
-                      <option value="published">Gwent</option>
-                      <option value="published">Humberside</option>
-                      <option value="published">Hertfordshire</option>
-                      <option value="published">Hampshire & Isle of Wight</option>
-                      <option value="published">Lancashire</option>
-                      <option value="published">Greater London</option>
-                      <option value="published">Lincolnshire</option>
-                      <option value="published">Leicestershire</option>
-                      <option value="published">Greater Manchester</option>
-                      <option value="published">West Midlands</option>
-                      <option value="published">Merseyside</option>
-                      <option value="comments">Northumbria</option>
-                      <option value="comments">Norfolk</option>
-                      <option value="comments">Suffolk</option>
-                      <option value="comments">Surrey</option>
-                      <option value="comments">Sussex</option>
-                      <option value="comments">Staffordshire</option>
-                      <option value="comments">South Wales</option>
-                      <option value="comments">Teeside</option>
-                      <option value="comments">Thames Valley</option>
-                      <option value="comments">West Mercia</option>
-                      <option value="comments">North Wales</option>
-                      <option value="comments">Wiltshire</option>
-                      <option value="published">North Yorkshire</option>
-                      <option value="published">South Yorkshire</option>
-                      <option value="published">West Yorkshire</option>
-                      <option value="published">Altcourse (HMP)</option>
-                      <option value="published">Forest Bank (HMP)</option>
-                      <option value="published">Hindley (HMPYOI)</option>
-                      <option value="published">Liverpool (HMP)</option>
-                      <option value="published">Risley (HMP)</option>
-                      <option value="published">Lancaster Farms (HMYOI)</option>
-                      <option value="published">Thorn Cross (HMYOI)</option>
-                      <option value="published">Garth (HMP)</option>
-                      <option value="published">Haverigg (HMP)</option>
-                      <option value="published">Kirkham (HMP)</option>
-                      <option value="published">Lancaster Castle (HMP)</option>
-                      <option value="published">Preston (HMP))</option>
-                      <option value="published">Wymott (HMP)</option>
-                      <option value="published">Deerbolt (HMP)</option>
-                      <option value="published">Holme House (HMP)</option>
-                      <option value="published">Kirklevington (HMP)</option>
-                      <option value="published">Castington (HMP)</option>
-                      <option value="published">Doncaster (HMP)</option>
-                      <option value="published">Everthorpe (HMP)</option>
-                      <option value="published">Leeds (HMP)</option>
-                      <option value="published">Lindholme (HMP)</option>
-                      <option value="published">Moorland (HMP)</option>
-                      <option value="published">Northallerton (HMP)</option>
-                      <option value="published">The Wolds (HMP)</option>
-                      <option value="published">Wealstun (HMP)</option>
-                      <option value="published">Hatfield (HMP)</option>
-                      <option value="published">Lincoln (HMP)</option>
-                      <option value="published">Ranby (HMP)</option>
-                      <option value="published">Sudbury (HMP)</option>
-                      <option value="published">Whatton (HMP)</option>
-                      <option value="published">Ashwell (HMP)</option>
-                      <option value="published">Gartree (HMP)</option>
-                      <option value="published">Glen Parva (HMP)</option>
-                      <option value="published">Leicester (HMP)</option>
-                      <option value="published">Rye Hill (HMP)</option>
-                      <option value="published">Wellingborough (HMP)</option>
-                      <option value="published">Onley (HMP)</option>
-                      <option value="published">Hewell (HMP)</option>
-                      <option value="published">Brinsford (HMP)</option>
-                      <option value="published">Dovegate (HMP)</option>
-                      <option value="published">Featherstone (HMP)</option>
-                      <option value="published">Northumberland (HMP)</option>
-                      <option value="published">Oakwood (HMP)</option>
-                      <option value="published">Thameside (HMP)</option>
-                      <option value="published">Onley (HMP)</option>
-                      <option value="published">Feltham (HMP)</option>
-                      <option value="published">Manchester (HMP)</option>
-                      <option value="published">Nottingham (HMP)</option>
-                      <option value="published">Isle of Wight (HMP)</option>
-                      <option value="published">Brixton (HMP)</option>
-                      <option value="published">Durham (HMP)</option>
-                      <option value="published">Styal (HMP)</option>
-                      <option value="published">Prescoed (HMPYOI)</option>
-                      <option value="published">Hull (HMP)</option>
-                      <option value="published">North Sea Camp (HMP)</option>
-                      <option value="published">Stafford (HMP)</option>
-                      <option value="published">Camp Hill (HMP)</option>
-                      <option value="published">Latchmere House (HMP)</option>
-                      <option value="published">Dartmoor (HMP)</option>
-                      <option value="published">The Weare (HMP)</option>
-                      <option value="published">Ashfield (HMP)</option>
-                      <option value="published">Buckley Hall (HMP)</option>
-                      <option value="published">Acklington (HMP)</option>
-                      <option value="published">Lowdham Grange (HMP)</option>
-                      <option value="published">Stocken (HMP)</option>
-
-                      <option value="published">Avon and Somerset Probation Trust</option>
-                      <option value="published">Devon & Cornwall</option>
-                      <option value="published">Kent</option>
-                      <option value="published">Northamptonshire</option>
-                      <option value="published">Warwickshire</option>
-                      <option value="published">Nottinghamshire</option>
-                      <option value="published">Humber (HMP)</option>
-                      <option value="published">NPS North West</option>
-                      <option value="published">NPS North East</option>
-                      <option value="published">Berwyn (HMP)</option>
-                      <option value="published">Medway (HMP)</option>
-                      <option value="published">Northumbria CRC</option>
-                      <option value="published">Cumbria and Lancashire CRC</option>
-                      <option value="published">Durham Tees Valley CRC</option>
-                      <option value="published">Humberside Lincs and North Yorkshire CRC</option>
-                      <option value="published">West Yorkshire CRC</option>
-                      <option value="published">Merseyside CRC</option>
-                      <option value="published">Cheshire and Greater Manchester CRC</option>
-                      <option value="published">Derbyshire Notts Leics and Rutland CRC</option>
-                      <option value="published">South Yorkshire CRC</option>
-                      <option value="published">Wales CRC</option>
-                      <option value="published">Staffordshire and West Midlands CRC</option>
-                      <option value="published">Warwickshire and West Mercia CRC</option>
-                      <option value="published">BeNCH CRC</option>
-                      <option value="published">Norfolk and Suffolk CRC</option>
-                      <option value="published">Durham Tees Valley CRC</option>
-                      <option value="published">Bristol Gloucs Somerset and Wilts CRC</option>
-                      <option value="published">Thames Valley CRC</option>
-                      <option value="published">London CRC</option>
-                      <option value="published">Essex CRC</option>
-                      <option value="published">Dorset Devon and Cornwall CRC</option>
-                      <option value="published">Hampshire and Isle of Wight CRC</option>
-                      <option value="published">Kent Surrey and Sussex CRCC</option>
-                      <option value="published">NPS Wales</option>
-                      <option value="published">NPS Midlands</option>
-                      <option value="published">NPS South West</option>
-                      <option value="published">NPS South East and Eastern</option>
-                      <option value="published">NPS London</option>
-                      <option value="published">London</option>
-                      <option value="updated" selected>Norfolk</option>
-                    </select>
-                  </div>
+<!--                   <label class="govuk-label" for="sort">
+                    Sort by
+                  </label> -->
+                  <select class="govuk-select" name="sort" id="selectid">
+                    <option value="views" selected>103 - Aggregated assault</option>
+                    <option value="views">55 - Bankruptcy and insolvency</option>
+                    <option value="published">75 - Betting, gaming and lotteries</option>
+                    <option value="publicHealth"  >91 - Public health</option>
+                    <option value="comments">66 - Other offences against the State and Public Order</option>
+                  </select>
+                </fieldset>
                 </div>
 
+                 <div class="govuk-form-group">
+                  <fieldset class="govuk-fieldset" aria-describedby="changed-name-hint">
+                    <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
+                      <h1 class="govuk-fieldset__heading">
+                        Choose a subcode
+                      </h1>
+                    </legend>
+<!--                   <label class="govuk-label" for="sort">
+                    Sort by
+                  </label> -->
+                  <select class="govuk-select" id="sort" name="sort">
+                    <option value="updated hideoption" selected>00 - Aggregated assault</option>
+                    <option value="published">28 - Failing to keep a record of a risk assessment or failing to give the Secretary of State further information</option>
+                    <option value="updated">29 - Contravening a prohibition notice - Environmental Protection Act 1990</option>
+                    <option value="views">30 - Obstructing an inspector where he believes imminent danger is involved - Environmental Protection Act 1990</option>
+                    <option value="comments">31 - Failing to comply with any requirement to provide relevant information - Environmental Protection Act 1990</option>
+                    <option value="comments">32 - Making a false statement - Environmental Protection Act 1990</option>
+                    <option value="comments">33 - Making a false entry in any required record - Environmental Protection Act 1990</option>
 
-                <a href="index1.html" role="button" draggable="false" class="govuk-button govuk-button--start" data-module="govuk-button">
-                Start assessment
-                <svg class="govuk-button__start-icon" xmlns="http://www.w3.org/2000/svg" width="17.5" height="19" viewBox="0 0 33 40" aria-hidden="true" focusable="false">
-                  <path fill="currentColor" d="M0 0h13l20 20-20 20H0l20-20z" />
-                </svg></a>
-              
+                    <option value="comments">34 - Forging, using, making or processing a document purporting to have been issued under Section 111 - Environmental Protection Act 1990</option>
+                    <option value="comments">35 - Contravening regulations made to control the import, use, supply and storage of any specified injurious substance or article</option>
+                    <option value="comments">36 - Contravening regulations made to prohibit or restrict the import or export of waste</option>
+                    <option value="comments">37 - Contravening conditions of a waste management licence</option>
+                    <option value="comments">38 - Obstructing an inspector exercising his powers to seize, render harmless or take samples from an article or substance believed to be a cause of imminent danger to the environment or serious harm to human health</option>
+
+                    <option value="comments">39 - Failing without reasonable excuse to provide any information required by a waste regulation authority or the Secretary of State</option>
+                    <option value="comments">40 - Failing to comply with a notice or failing to furnish information or furnishing false information</option>
+                    <option value="comments">41 - Obstructing an authorised person in the execution of his powers</option>
+                    <option value="comments">42 - Failure to comply with the Regulations - Special Waste Regulations 1996 </option>
+                    <option value="comments">43 - Restriction on disclosure of information obtained under Section 23(2) etc. - Health Act 1999 </option>
+                    <option value="comments">44 - Publishing or causing to be published a tobacco advertisement</option>
+                    <option value="comments">45 - Printing devising or distributing a tobacco advertisement in UK</option>
+
+                    <option value="comments">46 - Commissioning or selling a tobacco advertisement in newspapers, periodicals etc.</option>
+                    <option value="comments">47 - Displaying or causing to be displayed tobacco products if the display does not comply with any requirements as may be specified in regulations made under this Section - Tobacco Advertising and Promotion Act 2002 SS.8 & 16(2)</option>
+                    <option value="comments">48 - Giving or causing or permitting any product or coupon to be given to the public in the UK which promotes a tobacco product</option>
+                    <option value="comments">49 - Prohibition of any sponsorship promoting a tobacco product</option>
+                    <option value="comments">50 - Prohibition or restriction of brandsharing / brandstretching - regulations made under this Section</option>
+                  </select>
+                </fieldset>
+                </div>
+
+                
+
+
+
+                        
+
+
+
+
+
+  
+
+            <button class="govuk-button govuk-!-margin-right-1" data-module="govuk-button" onclick="location.href = '';">Update assessment details</button>
+
+            <button class="govuk-button govuk-button--secondary" data-module="govuk-button" onclick="location.href = 'psrCourt.html';">
+              Cancel
+            </button>
+
+
+
+          
+
+
+
+
+     
+
+
+
+
+
+
+
+                </div>
+              </div>
+
+
+
+
+
+
         </main>
       </div>
     
@@ -467,16 +329,6 @@ Case summary
 
 
   <script src="/public/javascripts/auto-store-data.js"></script>
-
-    <script src="/public/javascripts/accessible-autocomplete.min.js"></script>
-
-
-    <script type="application/javascript">
-      accessibleAutocomplete.enhanceSelectElement({
-        defaultValue: '',
-        selectElement: document.querySelector('#sort')
-      })
-    </script>
 
 
     
