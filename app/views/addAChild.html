@@ -260,7 +260,18 @@ Case summary
                       Contact details
                     </h2>
 
-                    <fieldset class="govuk-fieldset">
+                    <div class="govuk-form-group">
+                      <h1 class="govuk-label-wrapper"><label class="govuk-label govuk-label--m" for="more-detail">
+                          Address (if disclosable)
+                        </label>
+                      </h1>
+<!--                       <div id="more-detail-hint" class="govuk-hint">
+                        Do not include personal or financial information, like your National Insurance number or credit card details.
+                      </div> -->
+                      <textarea class="govuk-textarea" id="more-detail" name="more-detail" rows="5" aria-describedby="more-detail-hint"></textarea>
+                    </div>
+
+                  <!--   <fieldset class="govuk-fieldset">
                       <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
                         <h1 class="govuk-fieldset__heading">
                           Address (if disclosable)
@@ -297,7 +308,7 @@ Case summary
                         </label>
                         <input class="govuk-input govuk-input--width-10" id="address-postcode" name="address-postcode" type="text" autocomplete="postal-code"></div>
 
-                    </fieldset>
+                    </fieldset> -->
 
                     <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible">
 
