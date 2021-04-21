@@ -15,6 +15,14 @@ $(document).ready(function () {
 
 $( document ).ready(function() {
 
+  $("#strangerYes").click(function(){
+      $(".hiddenStranger").show();
+  });
+
+  $("#strangerNo").click(function(){
+      $(".hiddenStranger").hide();
+  });
+
   $("#currentYes").click(function(){
       $(".hiddenOffencesCurrent").show();
   });
