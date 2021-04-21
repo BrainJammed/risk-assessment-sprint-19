@@ -414,6 +414,14 @@ autocomplete__option--no-results {
 	font-weight: 700 !important;
 }
 
+.insetTextOffences{
+  color:  #505a5f;
+}
+
+.hiddenOffencesCurrent, .hiddenOffencesPrev {
+  display: none;
+}
+
 .govuk-summary-list__value {
 
 }

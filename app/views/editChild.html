@@ -116,7 +116,7 @@ Case summary
  
       <div class="key-details-bar__top-block">
         <span class="govuk-visually-hidden">Name:</span>
-        <span class="key-details-bar__name govuk-!-margin-right-6">Garry Hart</span>
+        <span class="key-details-bar__name govuk-!-margin-right-6">Gary Hart</span>
         <span class="govuk-body key-details-bar_divider crn"><strong>CRN:</strong> DX12340X</span>
         <span class="govuk-body key-details-bar_divider pnc"><strong>PNC:</strong> A1234560FF</span>
         <span class="govuk-body key-details-bar_divider pnc"><strong>Date of birth:</strong> 12 October 1989 (31 years old)</span>
@@ -160,7 +160,7 @@ Case summary
                       Name
                     </label>
                   </h1>
-                  <input class="govuk-input govuk-input--width-20" id="width-20" name="event-name" type="text" value="Dylan Hart">
+                  <input class="govuk-input govuk-input--width-20" id="width-20" name="event-name" type="text" value="Carina Hart">
                 </div>
 
                 <div class="govuk-form-group">
@@ -168,7 +168,7 @@ Case summary
                       Age
                     </label>
                   </h1>
-                  <input class="govuk-input govuk-input--width-3" id="width-3" name="event-name" type="text" value="11">
+                  <input class="govuk-input govuk-input--width-3" id="width-3" name="event-name" type="text" value="12">
                 </div>
 
                 <div class="govuk-form-group">
@@ -194,14 +194,14 @@ Case summary
                             <label class="govuk-label govuk-date-input__label" for="passport-issued-month">
                               Month
                             </label>
-                            <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="passport-issued-month" name="passport-issued-month" type="text" pattern="[0-9]*" inputmode="numeric" value="1"></div>
+                            <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="passport-issued-month" name="passport-issued-month" type="text" pattern="[0-9]*" inputmode="numeric" value="3"></div>
                         </div>
                         <div class="govuk-date-input__item">
                           <div class="govuk-form-group">
                             <label class="govuk-label govuk-date-input__label" for="passport-issued-year">
                               Year
                             </label>
-                            <input class="govuk-input govuk-date-input__input govuk-input--width-4" id="passport-issued-year" name="passport-issued-year" type="text" pattern="[0-9]*" inputmode="numeric" value="2011"></div>
+                            <input class="govuk-input govuk-date-input__input govuk-input--width-4" id="passport-issued-year" name="passport-issued-year" type="text" pattern="[0-9]*" inputmode="numeric" value="2009"></div>
                         </div>
                       </div>
 
@@ -217,17 +217,21 @@ Case summary
                         </legend>
                         <div class="govuk-radios govuk-radios--inline">
                           <div class="govuk-radios__item">
-                            <input class="govuk-radios__input" id="changed-name" name="changed-name" type="radio" value="yes" checked="checked">
+                            <input class="govuk-radios__input" id="male" name="gender" type="radio" value="yes" >
                             <label class="govuk-label govuk-radios__label" for="changed-name" >
                               Male
                             </label>
                           </div>
                           <div class="govuk-radios__item">
-                            <input class="govuk-radios__input" id="changed-name-2" name="changed-name" type="radio" value="no">
-                            <label class="govuk-label govuk-radios__label" for="changed-name-2">
+                            <input class="govuk-radios__input" id="female" name="gender" type="radio" value="female" checked="">
+                            <label class="govuk-label govuk-radios__label" for="changed-name-2" >
                               Female
                             </label>
                           </div>
+
+ 
+
+
                         </div>
 
                       </fieldset>
@@ -239,44 +243,17 @@ Case summary
                       Contact details
                     </h2>
 
-                    <fieldset class="govuk-fieldset">
-                      <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
-                        <h1 class="govuk-fieldset__heading">
+                    <div class="govuk-form-group">
+                      <h1 class="govuk-label-wrapper"><label class="govuk-label govuk-label--m" for="more-detail">
                           Address (if disclosable)
-                        </h1>
-                      </legend>
-
-                      <div class="govuk-form-group">
-                        <label class="govuk-label" for="address-line-1">
-                          Building and street <span class="govuk-visually-hidden">line 1 of 2</span>
                         </label>
-                        <input class="govuk-input" id="address-line-1" name="address-line-1" type="text" autocomplete="address-line1" value="10 Grove Road"></div>
+                      </h1>
+<!--                       <div id="more-detail-hint" class="govuk-hint">
+                        Do not include personal or financial information, like your National Insurance number or credit card details.
+                      </div> -->
+                      <textarea class="govuk-textarea" id="more-detail" name="more-detail" rows="5" aria-describedby="more-detail-hint">100 Drive Street, Flat 10, London, DR103IV</textarea>
+                    </div>
 
-                      <div class="govuk-form-group">
-                        <label class="govuk-label" for="address-line-2">
-                          <span class="govuk-visually-hidden">Building and street line 2 of 2</span>
-                        </label>
-                        <input class="govuk-input" id="address-line-2" name="address-line-2" type="text" autocomplete="address-line2" value="Flat 1"></div>
-
-                      <div class="govuk-form-group">
-                        <label class="govuk-label" for="address-town">
-                          Town or city
-                        </label>
-                        <input class="govuk-input govuk-!-width-two-thirds" id="address-town" name="address-town" type="text" autocomplete="address-level2" value="London"></div>
-
-                      <div class="govuk-form-group">
-                        <label class="govuk-label" for="address-county">
-                          County
-                        </label>
-                        <input class="govuk-input govuk-!-width-two-thirds" id="address-county" name="address-county" type="text" value="London"></div>
-
-                      <div class="govuk-form-group">
-                        <label class="govuk-label" for="address-postcode">
-                          Postcode
-                        </label>
-                        <input class="govuk-input govuk-input--width-10" id="address-postcode" name="address-postcode" type="text" autocomplete="postal-code" value="WE3 4SH"></div>
-
-                    </fieldset>
 
                     <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible">
 

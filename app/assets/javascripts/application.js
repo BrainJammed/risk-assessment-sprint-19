@@ -15,6 +15,22 @@ $(document).ready(function () {
 
 $( document ).ready(function() {
 
+  $("#currentYes").click(function(){
+      $(".hiddenOffencesCurrent").show();
+  });
+
+  $("#currentNo").click(function(){
+      $(".hiddenOffencesCurrent").hide();
+  });
+
+  $("#offencesPrevYes").click(function(){
+      $(".hiddenOffencesPrev").show();
+  });
+
+  $("#offencesPrevNo").click(function(){
+      $(".hiddenOffencesPrev").hide();
+  });
+
   $("#covitionForFirearmYes").click(function(){
       $(".hidePreviousCurrent").show();
   });
